@@ -1,12 +1,23 @@
+const { it, expect } = require("@jest/globals");
+const { Stack } = require("./stack.js");
+
 describe('the stack canary spec', () => {
   it('shows the infrastructure works', () => {
     expect(true).toBe(true);
   });
 });
 
+let testStack = new Stack();
+
 describe('a stack', () => {
-  it.todo('starts empty');
-  it.todo('starts with stack size of 0');
+  it('starts empty', () => {
+    expect(testStack).toEqual([]);
+  });
+
+  it('starts with stack size of 0', () => {
+    expect(testStack).toEqual([]);
+  });
+
   it.todo('is not empty when pushed');
   it.todo('stack size is 1 when pushed');
   it.todo('stack is empty when pushed and popped');
