@@ -14,4 +14,8 @@ describe('the palindrome canary spec', () => {
     expect(palindrome('orange')).toBe(false)
   })
 
+  it('is case insensitive', () => {
+    expect(palindrome('Mom')).toBe(true)
+  })
+
 });

@@ -3,7 +3,7 @@ const palindrome = (str) => {
     let end = str.length -1;
 
     while(start < end) {
-        if(str[start] !== str[end]) return false;
+        if(str[start].toLowerCase() !== str[end].toLowerCase()) return false;
         start++;
         end--;
     }
