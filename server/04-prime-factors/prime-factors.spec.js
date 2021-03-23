@@ -1,5 +1,5 @@
 const { expect } = require("@jest/globals");
-const
+const { primeFactors } = require("./prime-factors.js")
 
 describe('the prime factors canary spec', () => {
   it('shows the infrastructure works', () => {
@@ -9,8 +9,9 @@ describe('the prime factors canary spec', () => {
 
 describe('a prime factors function should', () => {
   it('return none for 1', () => {
-    expect.
+    expect(primeFactors(1)).toEqual([])
   });
+
   it.todo('return 2 for 2');
   it.todo('return 3 for 3');
   it.todo('return 2, 2 for 4');
