@@ -1,4 +1,4 @@
-class Stack extends Array{
+class Stack extends Array {
     constructor() {
         super()
     }
