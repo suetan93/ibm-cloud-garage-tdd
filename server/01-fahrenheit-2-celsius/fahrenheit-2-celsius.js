@@ -1,5 +1,5 @@
 const fahrenheitToCelsius = (val) => { 
-    return (val - 32) * (5/9);
+    return Math.round(((val - 32) * (5/9)) * 100) / 100;
 };
 
 module.exports = { fahrenheitToCelsius };
